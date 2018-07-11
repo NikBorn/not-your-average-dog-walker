@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import TabBar from './Components/TabBar/TabBar.js';
 
 class App extends Component {
   render() {
@@ -8,7 +9,7 @@ class App extends Component {
        <header>
          <h1>Not Your Average Dog Walker</h1>
        </header>
-       
+       <TabBar />
       </div>
     );
   }

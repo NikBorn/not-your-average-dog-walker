@@ -1,0 +1,19 @@
+.TabBar {
+  display: flex;
+  width: 100vw;
+  border-top: 1px solid grey;
+  position: fixed;
+  bottom: 0;
+}
+
+.tab {
+  height: 50px;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-one {
+  background-color: blue;
+}
