@@ -1,9 +1,15 @@
 .App {
   text-align: center;
+  /* background-color: #F1E8DF; //Jo's color */
+  background-color: #FFFFFA;
+  min-height: 100vh;
+  padding-top: 12px;
 }
 
 h1 {
   font-size: 1.2em;
+  margin: 0;
+  color: #00585E;
 }
 
 

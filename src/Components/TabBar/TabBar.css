@@ -12,8 +12,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #00585E;
+  color: #FFFFFA;
 }
 
 .tab-one {
-  background-color: blue;
+  background-color: #06D6A0;
+  
 }
