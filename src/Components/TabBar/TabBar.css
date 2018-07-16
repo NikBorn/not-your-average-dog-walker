@@ -1,9 +1,9 @@
 .TabBar {
   display: flex;
   width: 100vw;
-  border-top: 1px solid grey;
+  /* border-top: 2px solid #FFFFFA; */
   position: fixed;
-  bottom: 0;
+  bottom: -1px;
 }
 
 .tab {
