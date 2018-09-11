@@ -1,7 +1,7 @@
-.TabBar {
+/* .TabBar {
   display: flex;
   width: 100vw;
-  /* border-top: 2px solid #FFFFFA; */
+  border-top: 2px solid #FFFFFA;
   position: fixed;
   bottom: -1px;
 }
@@ -18,5 +18,42 @@
 
 .tab-one {
   background-color: #06D6A0;
-  
+}
+
+.tab.active {
+  background-color: #06D6A0;
+  color: white;
+} */
+
+
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #00585E;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+}
+
+.navbar a {
+  /* float: left; */
+  /* display: block; */
+  width: 25vw;
+  color: #FFFFFA;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a.active {
+  background-color: #06D6A0;
+  /* color: #FFFFFA; */
+}
+
+.main {
+  padding: 16px;
+  margin-bottom: 30px;
 }
