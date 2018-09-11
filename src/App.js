@@ -24,6 +24,12 @@ class App extends Component {
               <HomePage />
           }
         />
+
+        <Route exact path='/schedule'
+          render={() =>
+            <ScheduleForm />
+          }
+        />
         
       </div>
     );
