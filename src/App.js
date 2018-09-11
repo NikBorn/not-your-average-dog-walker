@@ -12,10 +12,19 @@ class App extends Component {
        <header>
          <h1>Not Your Average Dog Walker</h1>
        </header>
-        <HomePage/>
-        {/* <div className='happy-dog'>
-        </div> */}
-       <TabBar />
+
+        <Route path='/' 
+          render={() => 
+            <TabBar />
+          }
+        />
+
+        <Route exact path='/'
+          render={() =>
+              <HomePage />
+          }
+        />
+        
       </div>
     );
   }
