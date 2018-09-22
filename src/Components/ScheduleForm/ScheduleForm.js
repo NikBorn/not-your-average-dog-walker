@@ -5,37 +5,84 @@ class ScheduleForm extends Component {
     super();
     this.state = {
       firstName: '',
-      lastName: ''
+      lastName: '',
+      phoneNumber: 0,
+      dogsName: '',
+      dogBreed: '',
+      streetAddress: '',
+      dayOfTheWeek: '',
+      time: '',
+      dogNotes: ''
     };
+  }
+
+  handleChange(value, name) {
+    this.setState({
+      [name]:  value
+    });
+  }
+
+  submitInfo(e) {
+
+    const request = this.state;
+    
+   alert(`Thanks ${request.firstName} for inquiring about a dog walking session!  I lookforward to meeting you and ${request.dogsName}, I love ${request.dogBreed}!  I will be at your house at ${request.streetAddress} on ${request.dayOfTheWeek} at ${request.time}.  if I have any issues I'll give you a call at ${request.phoneNumber}`)
   }
 
   render() {
 
     return[
       
-      <form>
+      <form key='1'>
         <label>First Name</label>
-        <input type='text' placeholder='your first name'></input>
+        <input name='firstName' type='text' placeholder='your first name' onChange={(event)=> {
+          this.handleChange(event.target.value, event.target.name)
+        }}></input>
         <label>Last name</label>
-        <input type='text' placeholder='your last name'></input>
+        <input name='lastName' type='text' placeholder='your last name' onChange={(event) => {
+          this.handleChange(event.target.value, event.target.name)
+        }}></input>
         <label>Phone #</label>
-        <input type='text' placeholder='303-867-5309'></input>
+        <input name='phoneNumber' type='number' placeholder='303-867-5309' onChange={(event) => {
+          this.handleChange(event.target.value, event.target.name)
+        }}></input>
         <label>Dogs name</label>
-        <input type='text' placeholder='your dogs name'></input>
+        <input name='dogsName' type='text' placeholder='your dogs name' onChange={(event) => {
+          this.handleChange(event.target.value, event.target.name)
+        }}></input>
         <label>Dogs Breed</label>
-        <input type='text' placeholder='your dogs breed'></input>
+        <input name='dogBreed' type='text' placeholder='your dogs breed' onChange={(event) => {
+          this.handleChange(event.target.value, event.target.name)
+        }}></input>
         <label>Steet Address</label>
-        <input type='text' placeholder='street address'></input>
+        <input name='streetAddress' type='text' placeholder='street address' onChange={(event) => {
+          this.handleChange(event.target.value, event.target.name)
+        }}></input>
         <label>City</label>
-        <input type='text' placeholder='city'></input>
+        <input name='city' type='text' placeholder='city' onChange={(event) => {
+          this.handleChange(event.target.value, event.target.name)
+        }}></input>
         <label>Day</label>
-        <input type='text' placeholder='day of the week"'></input>
+        <input name='dayOfTheWeek' type='text' placeholder='day of the week"' onChange={(event) => {
+          this.handleChange(event.target.value, event.target.name)
+        }}></input>
         <label>Time:</label>
-        <input type='text' placeholder='time'></input>
+        <input name='time' type='number' placeholder='time' onChange={(event) => {
+          this.handleChange(event.target.value, event.target.name)
+        }}></input>
         <label>Add. Notes</label>
-        <input type='text' placeholder='any notes about your dog'></input>
+        <input name='dogNotes' type='text' placeholder='any notes about your dog' onChange={(event) => {
+          this.handleChange(event.target.value, event.target.name)
+        }}></input>
       </form>,
-      <button className='submit-btn'>Submit</button>
+      <button className='submit-btn' 
+              onClick={ (event)=> {
+                event.preventDefault();
+                this.submitInfo()
+                }
+              }
+              key='2'
+      >Submit</button>
     ]
   }
 

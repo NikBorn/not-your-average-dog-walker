@@ -3,7 +3,7 @@
   /* background-color: #F1E8DF; //Jo's color */
   background-color: #FFFFFA;
   min-height: 100vh;
-  padding-top: 12px;
+  /* padding-top: 12px; */
   font-family: 'Quicksand', sans-serif;
   /* font-family: 'Abel', sans-serif; */
   /* font-family: 'Ropa Sans', sans-serif; */
@@ -12,38 +12,54 @@
 
 h1 {
   font-size: 1.2em;
-  margin: 0;
+  margin: 10px 0;
   color: #00585E;
 }
 
 h2 {
   color: #06D6A0;
+  margin: 0;
 }
 
 button {
-  background-color: #06D6A0;
+  /* background-color: #06D6A0;
   color: #FFFFFA;
   padding: 10px 14px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; */
 }
 
-.main-section a {
-  margin-top: 40px;
+.background a {
+  margin-top: 320px;
   background-color: #06D6A0;
-  color: #FFFFFA;
+  /* color: #FFFFFA; */
   padding: 10px 14px;
   text-decoration: none;
+  -webkit-box-shadow: 6px 9px 32px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 9px 32px 0px rgba(0,0,0,0.75);
+  box-shadow: 6px 9px 32px 0px rgba(0,0,0,0.75);
+  z-index: 1001;
+  position: absolute;
+  right: 94px;
+  bottom: -120px;
+  font-size: 1.1em;
 }
 
 .main-section {
-  max-width: 80%;
   margin: 0 auto;
   color: #00585E;
+  width: 100vw;
+  padding-bottom: 400px;
 }
 
 p {
   text-align: left;
   margin-bottom: 40px;
+  color: #00585E;
+}
+
+.main-section p {
+  max-width: 70%;
+  margin: 20px auto;
 }
 
 .happy-dog {
@@ -91,6 +107,50 @@ label {
   margin: 0 auto;
 }
 
+.header-image {
+  background-image: url('./images/dogsprinkler.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0;
+  /* position: fixed; */
+  float: right;
+  width: 240px;
+  height: 240px;
+  /* background-position: -100px 0 ; */
+  position: absolute;
+
+  left: 10px;
+  top: 80px;
+  -webkit-box-shadow: 6px 9px 32px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 9px 32px 0px rgba(0,0,0,0.75);
+  box-shadow: 6px 9px 32px 0px rgba(0,0,0,0.75);
+  z-index: 1000;
+}
+
+.background {
+  background-color: #00585E;
+  width: 300px;
+  min-height: 500px;
+  margin: 0 auto;
+  margin-top: 80px;
+  -webkit-box-shadow: 6px 9px 32px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 9px 32px 0px rgba(0,0,0,0.75);
+  box-shadow: 6px 9px 32px 0px rgba(0,0,0,0.75);
+  padding-top: 240px;
+}
+
+.text-background {
+  background-color:   #FFFFFA;
+  position: absolute;
+  z-index: 100;
+  width: 280px;
+  left: 80px;
+  top: 300px;
+  padding: 44px 0 20px 0;
+  -webkit-box-shadow: 6px 9px 32px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 9px 32px 0px rgba(0,0,0,0.75);
+  box-shadow: 6px 9px 32px 0px rgba(0,0,0,0.75);
+}
 
 
 
