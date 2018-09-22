@@ -39,22 +39,23 @@ button {
   box-shadow: 6px 9px 32px 0px rgba(0,0,0,0.75);
   z-index: 1001;
   position: absolute;
-  right: 94px;
-  bottom: -120px;
-  font-size: 1.1em;
+  right: 100px;
+  bottom: -60px;
+  /* font-size: 1.1em; */
 }
 
 .main-section {
   margin: 0 auto;
   color: #00585E;
   width: 100vw;
-  padding-bottom: 400px;
+  padding-bottom: 100px;
 }
 
 p {
   text-align: left;
   margin-bottom: 40px;
   color: #00585E;
+  font-size: 14px;
 }
 
 .main-section p {
@@ -127,10 +128,16 @@ label {
   z-index: 1000;
 }
 
+.review-image {
+  background-image: url('./images/happydog.jpg');
+  background-size: 140%;
+  background-position: -10px -60px;
+}
+
 .background {
   background-color: #00585E;
   width: 300px;
-  min-height: 500px;
+  min-height: 460px;
   margin: 0 auto;
   margin-top: 80px;
   -webkit-box-shadow: 6px 9px 32px 0px rgba(0,0,0,0.75);
@@ -150,6 +157,10 @@ label {
   -webkit-box-shadow: 6px 9px 32px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 6px 9px 32px 0px rgba(0,0,0,0.75);
   box-shadow: 6px 9px 32px 0px rgba(0,0,0,0.75);
+}
+
+.review-section {
+  min-height: 800px;
 }
 
 
