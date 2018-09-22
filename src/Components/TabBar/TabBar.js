@@ -10,10 +10,10 @@ class TabBar extends Component {
   render() {
     return(
       <div className="navbar">
-        <a href="#home" className="active">Home</a>
-        <a href="#reviews">reviews</a>
+        <a href="/">Home</a>
+        <a href="/reviews">Reviews</a>
         <a href="#contact">Contact</a>
-        <a href="#more">News</a>
+        <a href="#more">More</a>
       </div>
     )
   }

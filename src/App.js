@@ -5,6 +5,7 @@ import './images/happydog.png';
 import { Route } from 'react-router';
 import HomePage from './Components/HomePage/HomePage.js';
 import ScheduleForm from './Components/ScheduleForm/ScheduleForm.js';
+import ReviewsPage from './Components/ReviewsPage/ReviewsPage.js';
 
 class App extends Component {
   render() {
@@ -23,6 +24,12 @@ class App extends Component {
         <Route exact path='/'
           render={() =>
               <HomePage />
+          }
+        />
+
+        <Route exact path='/reviews'
+          render={() =>
+            <ReviewsPage />
           }
         />
 
