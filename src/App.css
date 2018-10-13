@@ -22,10 +22,10 @@ h2 {
 }
 
 button {
-  /* background-color: #06D6A0;
+  background-color: #06D6A0;
   color: #FFFFFA;
   padding: 10px 14px;
-  margin-bottom: 20px; */
+  margin-bottom: 20px;
 }
 
 .background a {
@@ -37,10 +37,11 @@ button {
   -webkit-box-shadow: 6px 9px 32px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 6px 9px 32px 0px rgba(0,0,0,0.75);
   box-shadow: 6px 9px 32px 0px rgba(0,0,0,0.75);
-  z-index: 1001;
-  position: absolute;
-  right: 100px;
-  bottom: -60px;
+  margin: 20px;
+  /* z-index: 1001; */
+  /* position: absolute; */
+  /* right: 100px; */
+  /* bottom: -60px; */
   /* font-size: 1.1em; */
 }
 
@@ -60,10 +61,18 @@ p {
 
 .main-section p {
   max-width: 70%;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 
-.happy-dog {
+header {
+  background-color: #06D6A0;
+  padding: 4px 0;
+  /* -webkit-box-shadow: -1px -9px 43px 9px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px -9px 43px 9px rgba(0,0,0,0.75);
+  box-shadow: -1px -9px 43px 9px rgba(0,0,0,0.75); */
+}
+
+/* .happy-dog {
   background-image: url('./images/happydog.png');
   background-repeat: no-repeat;
   background-size: 70%;
@@ -72,8 +81,8 @@ p {
   float: bottom;
   width: 100%;
   height: 100%;
-  /* background-position: 36px 0px; */
-}
+  background-position: 36px 0px;
+} */
 
 form {
   background-color: lightgray;
@@ -134,10 +143,38 @@ label {
   background-position: -10px -60px;
 }
 
+.five-stars {
+  width: 90px;
+  height: 18px;
+  background-image: url('./images/5stars.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: contain;
+}
+
+.main-section .customer-name  {
+  display: inline-block;
+  margin: 10px 6px 10px 0;
+}
+
+.review-header {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.contact-image {
+  background-image: url('./images/jo.jpeg');
+  background-size: 160%;
+  background-position: center;
+}
+
 .background {
   background-color: #00585E;
   width: 300px;
-  min-height: 460px;
+  min-height: 560px;
   margin: 0 auto;
   margin-top: 80px;
   -webkit-box-shadow: 6px 9px 32px 0px rgba(0,0,0,0.75);
@@ -157,6 +194,7 @@ label {
   -webkit-box-shadow: 6px 9px 32px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 6px 9px 32px 0px rgba(0,0,0,0.75);
   box-shadow: 6px 9px 32px 0px rgba(0,0,0,0.75);
+  padding-top: 60px;
 }
 
 .review-section {
