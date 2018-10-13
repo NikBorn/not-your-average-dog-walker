@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './ScheduleForm.css'
 
 class ScheduleForm extends Component {
   constructor() {
@@ -71,9 +72,9 @@ class ScheduleForm extends Component {
           this.handleChange(event.target.value, event.target.name)
         }}></input>
         <label>Add. Notes</label>
-        <input name='dogNotes' type='text' placeholder='any notes about your dog' onChange={(event) => {
+        <textarea name='dogNotes' type='text' placeholder='any notes about your dog' onChange={(event) => {
           this.handleChange(event.target.value, event.target.name)
-        }}></input>
+        }}></textarea>
       </form>,
       <button className='submit-btn' 
               onClick={ (event)=> {

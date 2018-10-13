@@ -4,7 +4,6 @@ import './TabBar.css';
 class TabBar extends Component {
   constructor() {
     super();
-
   }
 
   render() {
@@ -12,8 +11,12 @@ class TabBar extends Component {
       <div className="navbar">
         <a href="/">Home</a>
         <a href="/reviews">Reviews</a>
-        <a href="#contact">Contact</a>
-        <a href="#more">More</a>
+        <a href="/contact">Contact</a>
+        <a href="/connect"
+           onClick={()=>{
+             console.log('MORE!!!')
+           }}        
+        >Connect</a>
       </div>
     )
   }

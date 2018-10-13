@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
 import TabBar from './Components/TabBar/TabBar.js';
-import './images/happydog.png';
+// import './images/happydog.png';
 import { Route } from 'react-router';
 import HomePage from './Components/HomePage/HomePage.js';
 import ScheduleForm from './Components/ScheduleForm/ScheduleForm.js';
 import ReviewsPage from './Components/ReviewsPage/ReviewsPage.js';
+import ContactPage from './Components/ContactPage/ContactPage.js';
 
 class App extends Component {
   render() {
@@ -33,6 +34,11 @@ class App extends Component {
           }
         />
 
+        <Route exact path='/contact'
+          render={() =>
+            <ContactPage />
+          }
+        />
         <Route exact path='/schedule'
           render={() =>
             <ScheduleForm />
